@@ -1,0 +1,53 @@
+@import '/src/variables.less';
+.mainPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: @background-color-main;
+}
+
+.menu{
+
+  width: 546px;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 0px 1px #E5E5EA;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+@media screen and (max-width: 992px) {
+  .menu {
+    width: 456px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    width: 380px;
+  }
+}
+
+
+.title {
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.menuContainer {
+  padding: 0 20px 20px 20px;
+}
+
+.chatsContainer{
+  overflow-y: visible;
+  max-height: 50vh;
+}
+
+.exitBtn {
+  position: absolute;
+  top: 30px;
+  right: 10%;
+}

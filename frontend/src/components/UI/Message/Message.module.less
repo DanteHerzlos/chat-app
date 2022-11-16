@@ -1,0 +1,65 @@
+@import '/src/variables.less';
+
+.messageBox {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.left .body {
+  border-radius: 0px 6px 6px 6px;
+  color: @font-color-2;
+  background-color: @background-color-message-left;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.right .leftArrow{
+  display: none;
+
+}
+
+.left .rightArrow {
+  display: none;
+}
+
+.right .body {
+  border-radius: 6px 0px 6px 6px;
+  color: @font-color-3;
+  background-color: @background-color-message-right;
+}
+
+.messageBox .body {
+  margin: 0;
+  padding: 4px 8px;
+  max-width: 65%;
+}
+
+
+.time {
+  text-align: right;
+  font-size: 12px;
+}
+
+.username{
+  font-weight: 600;
+}
+
+.rightArrow , .leftArrow{
+  font-size: 10px;
+
+}
+.rightArrow{
+  fill:  @background-color-message-right;
+}
+.leftArrow{
+  fill:  @background-color-message-left;
+}

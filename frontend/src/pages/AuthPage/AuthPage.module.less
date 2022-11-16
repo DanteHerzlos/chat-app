@@ -1,0 +1,41 @@
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(http://localhost:3000/background.png);
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.auth {
+  transition: .3s;
+  width: 546px;
+  padding: 30px 30px 10px 30px;
+  background: #ffffff;
+  box-shadow: 0px 40px 30px 10px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 0px 1px #e5e5ea;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .auth {
+    width: 456px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .auth {
+    width: 380px;
+  }
+}
+
+
